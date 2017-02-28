@@ -831,7 +831,7 @@ bullet2.speed = 10;
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="38">
+    <event eventtype="10" enumb="87">
       <action>
         <libid>1</libid>
         <id>611</id>
