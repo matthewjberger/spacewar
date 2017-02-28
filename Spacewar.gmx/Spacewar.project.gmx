@@ -8,9 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\sprite_ship</sprite>
     <sprite>sprites\sprite_thrust</sprite>
-    <sprite>sprites\sprite_large</sprite>
-    <sprite>sprites\sprite_medium</sprite>
-    <sprite>sprites\sprite_small</sprite>
     <sprite>sprites\sprite_planet</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\sprite7</sprite>

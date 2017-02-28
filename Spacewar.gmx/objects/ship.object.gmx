@@ -195,7 +195,7 @@ self.warpAttemptsLeft = random_range(3,6);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_bullet">
+    <event eventtype="4" ename="obj_bullet_other">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -216,7 +216,7 @@ self.warpAttemptsLeft = random_range(3,6);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-20</string>
           </argument>
         </arguments>
       </action>
@@ -292,7 +292,7 @@ self.warpAttemptsLeft = random_range(3,6);
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>room1</room>
+            <room>room2</room>
           </argument>
         </arguments>
       </action>
@@ -366,12 +366,12 @@ self.warpAttemptsLeft = random_range(3,6);
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>room1</room>
+            <room>room2</room>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="ship">
+    <event eventtype="4" ename="ship_other">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -431,105 +431,7 @@ self.warpAttemptsLeft = random_range(3,6);
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="87">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>thrustison</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>motion_add(dir,0.2);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="70">
-      <action>
-        <libid>1</libid>
-        <id>111</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_random</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>warpAttemptsLeft -= 1;
-if(warpAttemptsLeft &lt;= 0)
-{
-    myHealth = 0;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="68">
+    <event eventtype="5" enumb="39">
       <action>
         <libid>1</libid>
         <id>612</id>
@@ -621,7 +523,54 @@ if(warpAttemptsLeft &lt;= 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="65">
+    <event eventtype="5" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>thrustison</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>motion_add(dir,0.2);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="37">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -794,13 +743,13 @@ if(warpAttemptsLeft &lt;= 0)
             <kind>1</kind>
             <string>draw_healthbar(x - sprite_width/2 - 6,y - sprite_height/2 - 20,x + sprite_width/2 + 6,y - sprite_height/2 - 10,myHealth,c_black,c_red,c_green,0,true,true);
 draw_set_colour(c_white);
-draw_text(x - sprite_width/2 - 12,y - sprite_height/2 - 40,"Player One:");
+draw_text(x - sprite_width/2 - 12,y - sprite_height/2 - 40,"Player Two:");
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="17">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -818,8 +767,8 @@ draw_text(x - sprite_width/2 - 12,y - sprite_height/2 - 40,"Player One:");
           <argument>
             <kind>1</kind>
             <string>spread = 18;
-bullet1 = instance_create(x+dsin(dir)*spread, y+dcos(dir)*spread,obj_bullet_other);
-bullet2 = instance_create(x-dsin(dir)*spread, y-dcos(dir)*spread,obj_bullet_other);
+bullet1 = instance_create(x+dsin(dir)*spread, y+dcos(dir)*spread,obj_bullet);
+bullet2 = instance_create(x-dsin(dir)*spread, y-dcos(dir)*spread,obj_bullet);
 
 bullet1.direction = dir;
 bullet2.direction = dir;
@@ -831,7 +780,59 @@ bullet2.speed = 10;
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="87">
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>111</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move_random</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>warpAttemptsLeft -= 1;
+if(warpAttemptsLeft &lt;= 0)
+{
+    instance_destroy();
+    room_goto(room2);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="38">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -860,7 +861,7 @@ bullet2.speed = 10;
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>2</PhysicsObjectShape>
+  <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -873,5 +874,6 @@ bullet2.speed = 10;
     <point>0,0</point>
     <point>58,0</point>
     <point>58,58</point>
+    <point>0,58</point>
   </PhysicsShapePoints>
 </object>
