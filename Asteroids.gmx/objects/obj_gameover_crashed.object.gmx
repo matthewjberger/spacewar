@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>Player One Won!</string>
+            <string>Nobody won!</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>300</string>
+            <string>340</string>
           </argument>
           <argument>
             <kind>0</kind>

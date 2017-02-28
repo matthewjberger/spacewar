@@ -28,10 +28,13 @@
     <object>objects\obj_bullet_other</object>
     <object>objects\obj_gameover_text</object>
     <object>objects\obj_gameover_text_alt</object>
+    <object>objects\obj_gameover_crashed</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
